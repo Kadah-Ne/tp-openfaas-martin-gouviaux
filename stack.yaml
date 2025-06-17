@@ -1,0 +1,34 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+  
+functions:
+  daily-fetcher:
+    lang: python3-http
+    handler: ./daily-fetcher
+    image: kadah/daily-fetcher:latest
+    annotations:
+      com.openfaas.schedule: "0 8 * * *"
+      com.openfaas.topic: "orders.import"
+    labels:
+      com.openfaas.scale.min: "1"
+      com.openfaas.scale.max: "1"
+
+  file-transformer:
+    lang: python3-http
+    handler: ./file-transformer
+    image: kadah/file-transformer:latest
+    annotations:
+      topic: "orders.import"
+    secrets:
+      - sftp-host
+      - sftp-username
+      - sftp-password
+      - sftp-dir
+
+  status-checker:
+    lang: python3-http
+    handler: ./status-checker
+    image: kadah/status-checker:latest
+
