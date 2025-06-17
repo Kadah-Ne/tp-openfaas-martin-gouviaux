@@ -23,7 +23,7 @@ Chaque étudiant joue le rôle d'un développeur DevOps en charge d'automatiser 
 
 **Réponse :**
 ```
-![github](https://github.com/Kadah-Ne/tp-openfaas-martin-gouviaux)
+https://github.com/Kadah-Ne/tp-openfaas-martin-gouviaux
 ```
 
 ### 2. Démonstration fonctionnelle
