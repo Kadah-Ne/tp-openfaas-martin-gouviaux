@@ -23,31 +23,31 @@ Chaque étudiant joue le rôle d'un développeur DevOps en charge d'automatiser 
 
 **Réponse :**
 ```
-[Prévoir ici un lien Git ou lister les répertoires de chaque fonction avec leur contenu : handler.py, YAML, etc.]
+![github](https://github.com/Kadah-Ne/tp-openfaas-martin-gouviaux)
 ```
 
 ### 2. Démonstration fonctionnelle
 
-**Réponse :**
+**Réponse :**\n
 J'ai programmer les cron pour trigger tout les jours a 8h, au lancement le fichier 'input.csv' doit etre netroye et enregistrer dans le dossier depot de status-checker, qui affiche tout les fichiers dans son dossier, ce qui est 1 comme ils ont tous le meme nom
 
 ### 3. Analyse des logs / sorties attendues
 
-**Réponse :**
-daily-checker -> affiche un json contenant '"order_date": "{date du jour}"'
-file-transformer -> affiche 'Transformation réussie, fichier généré : /home/app/function/status-checker/depot/output.csv'
-status-checker -> affiche 'Nombre de fichiers dans depot/ : {nombre de fichiers (1 dans notre cas)}'
+**Réponse :**\n
+daily-checker -> affiche un json contenant '"order_date": "{date du jour}"'\n
+file-transformer -> affiche 'Transformation réussie, fichier généré : /home/app/function/status-checker/depot/output.csv'\n
+status-checker -> affiche 'Nombre de fichiers dans depot/ : {nombre de fichiers (1 dans notre cas)}'\n
 ### 4. Rapport synthétique (2 pages maximum)
 
-**Réponse :**
-j'ai fais le choix de suivre pour la plus part du projet les consignes, a l'exception des parties ou la connexion sftp etait requise.
-j'ai fais tout le projet en local.
-pour la manipulation du fichier csv j'ai utiliser pandas car c'est un outil extremement efficace avec python et que je le connais plutot bien.
+**Réponse :**\n
+j'ai fais le choix de suivre pour la plus part du projet les consignes, a l'exception des parties ou la connexion sftp etait requise.\n
+j'ai fais tout le projet en local.\n
+pour la manipulation du fichier csv j'ai utiliser pandas car c'est un outil extremement efficace avec python et que je le connais plutot bien.\n
 
-j'ai eu un peu de mal avec les cron au depart mais j'ai finis par les faire marcher.
+j'ai eu un peu de mal avec les cron au depart mais j'ai finis par les faire marcher.\n
 ---
 
 ## Additionel
 
-Voir le fichier 'images' pour des captures d'ecrans des logs et de prometheus
+Voir le fichier 'images' pour des captures d'ecrans des logs et de prometheus\n
 
