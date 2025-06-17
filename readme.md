@@ -34,20 +34,20 @@ J'ai programmer les cron pour trigger tout les jours a 8h, au lancement le fichi
 ### 3. Analyse des logs / sorties attendues
 
 **Réponse :**\n
-daily-checker -> affiche un json contenant '"order_date": "{date du jour}"'\n
-file-transformer -> affiche 'Transformation réussie, fichier généré : /home/app/function/status-checker/depot/output.csv'\n
-status-checker -> affiche 'Nombre de fichiers dans depot/ : {nombre de fichiers (1 dans notre cas)}'\n
+daily-checker -> affiche un json contenant '"order_date": "{date du jour}"'
+file-transformer -> affiche 'Transformation réussie, fichier généré : /home/app/function/status-checker/depot/output.csv'
+status-checker -> affiche 'Nombre de fichiers dans depot/ : {nombre de fichiers (1 dans notre cas)}'
 ### 4. Rapport synthétique (2 pages maximum)
 
 **Réponse :**\n
-j'ai fais le choix de suivre pour la plus part du projet les consignes, a l'exception des parties ou la connexion sftp etait requise.\n
+j'ai fais le choix de suivre pour la plus part du projet les consignes, a l'exception des parties ou la connexion sftp etait requise.
 j'ai fais tout le projet en local.\n
-pour la manipulation du fichier csv j'ai utiliser pandas car c'est un outil extremement efficace avec python et que je le connais plutot bien.\n
+pour la manipulation du fichier csv j'ai utiliser pandas car c'est un outil extremement efficace avec python et que je le connais plutot bien.
 
-j'ai eu un peu de mal avec les cron au depart mais j'ai finis par les faire marcher.\n
+j'ai eu un peu de mal avec les cron au depart mais j'ai finis par les faire marcher.
 ---
 
 ## Additionel
 
-Voir le fichier 'images' pour des captures d'ecrans des logs et de prometheus\n
+Voir le fichier 'images' pour des captures d'ecrans des logs et de prometheus
 
